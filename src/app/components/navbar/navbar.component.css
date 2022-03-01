@@ -1,0 +1,13 @@
+.example-spacer{
+
+    flex: 1 1 content;
+}
+.example-icon
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*.flexSpaceBetween {
+    justify-content: space-between;
+}*/
