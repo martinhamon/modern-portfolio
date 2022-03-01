@@ -1,8 +1,40 @@
 .container{
-    display:flex ;
+    display:grid ;
     flex-direction: column;
     margin-bottom: 0px;
-    background-color: dimgray;
+    background-color: rgba(22, 19, 19, 0.76);
     justify-content: center;
     min-height: 500px;
+    padding-top: 50px;
 }
+
+.card-container {
+    /*  not needed styles to reflect it */ 
+   
+    
+    padding: 10px;
+    color: white;
+    width: 500px;
+  
+    /* needed styles below */
+    display: flex;
+    justify-content: center;
+  }
+  mat-card{
+      width: fit-content;
+    background-color: transparent;
+    box-shadow:none !important;
+    border: none !important;
+    border-radius: 0px;
+    border: 0;
+    outline: none;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+        
+    
+  }
+
+  .mat-card-content {
+    font-size: 20px;
+    color: darkgray;
+  }
