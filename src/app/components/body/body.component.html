@@ -1,25 +1,78 @@
 <div class="container">
 
     
-    <mat-card>
-        <mat-card-content class="card-container">
-            <p>Skills basado en proyectos realizados o participado.</p>
-           
+    <mat-card [appHighlight]="color" >
+      <mat-card-title>
+       
+        <p  >Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.
+          
+        </p>
+        <p>• Participación de equipos de investigación y desarrollo. </p>
+        <p>• Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnologías.</p>
+        <p>• Creación de bases de datos, entornos web y aplicaciones móviles sincronizadas.</p>
+        <p>• Identificación de problemas en entornos de desarrollo de software. </p>
+        <p> • Desempeño con sentido ético respecto de clientes, usuarios, colegas y la sociedad en su conjunto.</p>
+        
+       
+        
+        
+       
+      </mat-card-title>
+        <mat-card-content >
+            
+            <mat-grid-list cols="2"  rowHeight="100px">
+              
+              <mat-grid-tile
+                  *ngFor="let tile of tiles"
+                  [colspan]="tile.cols"
+                  [rowspan]="tile.rows"
+                 >
+    
+    
+                <img src={{tile.url}} alt="" >
+              </mat-grid-tile>
+             
+            </mat-grid-list>
           </mat-card-content>
         </mat-card>
     
-        <mat-grid-list cols="4" rowHeight="50px">
-              
-          <mat-grid-tile
-              *ngFor="let tile of tiles"
-              [colspan]="tile.cols"
-              [rowspan]="tile.rows"
-              [style.background]="tile.color">
-            {{tile.text}}
-          </mat-grid-tile>
-        </mat-grid-list>
         
-    
+        
+        <mat-card [appHighlight]="color" >
+          <mat-card-title>
+           
+            <p  >Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.
+              
+            </p>
+            <p>• Participación de equipos de investigación y desarrollo. </p>
+            <p>• Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnologías.</p>
+            <p>• Creación de bases de datos, entornos web y aplicaciones móviles sincronizadas.</p>
+            <p>• Identificación de problemas en entornos de desarrollo de software. </p>
+            <p> • Desempeño con sentido ético respecto de clientes, usuarios, colegas y la sociedad en su conjunto.</p>
+            
+           
+            
+            
+           
+          </mat-card-title>
+            <mat-card-content  class="mat-typography">
+                
+                <mat-grid-list cols="2"  rowHeight="100px">
+                  
+                  <mat-grid-tile 
+                      *ngFor="let tile of tiles"
+                      [colspan]="tile.cols"
+                      [rowspan]="tile.rows"
+                     >
+        
+        
+                    <img src={{tile.url}} alt="" >
+                  </mat-grid-tile>
+                 
+                </mat-grid-list>
+              </mat-card-content>
+            </mat-card>
+        
     
    
     

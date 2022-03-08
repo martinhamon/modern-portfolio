@@ -14,6 +14,8 @@ import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { HighlightDirective } from './directives/highlight.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HeaderComponent,
     BodyComponent,
     FooterComponent,
+    HighlightDirective,
     
   ],
   imports: [
